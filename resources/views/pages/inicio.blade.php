@@ -3,6 +3,11 @@
 
 @section('contenid')
 
+<?php
+
+    $sesionUsuario = session('sesionUsuario');
+?>
+
 <!-- <div class="row justify-content-center">
     <div class="col-5 text-center mt-3">
         <div class="card p-3 bg-black  border-info rounded-3 mb-4"
@@ -34,7 +39,11 @@
 
 
 <div class="row justify-content-center mt-2">
+
+    <label for="bienvenido">Bienvenido <?php echo $sesionUsuario ?></label>
+
     <hr class="my-4 border-primary" style="width: 100%; height: 4px; background-color: darkorchid;">
+
     <div class="col text-center">
         <label style="font-size: 40px;"> Algunos tipos de Peliculas</label>
         <p></p>

@@ -25,6 +25,18 @@ class Peliculas extends Migration
             $table->date('fecha_estreno');
 
         });
+
+        Schema::create('t_usuario', function (Blueprint $table) {
+            //funciones campos de la tabla
+            $table->id();
+            //      tipo    
+            $table->text('nombre');
+            $table->text('usuario');
+            $table->text('email');
+            $table->text('password');
+            $table->text('password_confir');
+
+        });
     }
 
     /**
